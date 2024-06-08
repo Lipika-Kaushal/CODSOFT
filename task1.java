@@ -2,7 +2,7 @@ import java.util.*;
 public class codsoft1 {
     Random rand = new Random();
     int n =rand.nextInt(100)+1;
-    
+
     public static void round(int rounds,int chances,int number){
         if(rounds>=6){
             System.out.println("Invalid number of rounds entered , choose between(1,2,3,4,5) only ");
@@ -33,10 +33,10 @@ public class codsoft1 {
             }
             else {
                 if(num==number){
-                    System.out.println("\n---------------------------YOU ROCK!!---------------------------\n---------------------You guessed it right!!---------------------");
+                    System.out.println("\nYOU ROCK!!\nYou guessed it right!!");
                 }
                 else{
-                    System.out.println("\n------------------------------------OOPS------------------------------------\n----------------------------It was a wrong guess----------------------------");
+                    System.out.println("\nOOPS\nIt was a wrong guess");
                 }
                 chances = chances - 1;
             }
