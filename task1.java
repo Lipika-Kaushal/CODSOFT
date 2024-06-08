@@ -25,24 +25,29 @@ public class codsoft1 {
         Scanner sc = new Scanner(System.in);
         while(chances>0){
             System.out.println("\nPlease guess the number : ");
-            int num = sc.nextInt();
+            int guesses_num = sc.nextInt();
 
-            if(num>100){
+            if(guesses_num>100){
                 System.out.println("Please enter number between 1-100 only");
                 game(chances);
             }
             else {
-                if(num==number){
+                if(guesses_num==number){
                     System.out.println("\nYOU ROCK!!\nYou guessed it right!!");
                 }
                 else{
                     System.out.println("\nOOPS\nIt was a wrong guess");
+                    if(guesses_num-number>15){
+                        System.out.println("\nThe guessed number is too high");
+                    } else if (number-guesses_num>15) {
+                        System.out.println("\nThe guessed number is too low");
+                    }
                 }
                 chances = chances - 1;
             }
         }
         score=chances*5;
-        System.out.println("Your score for this round is "+score);
+        System.out.println("\nYour score for this round is "+score);
 
         if(chances==0){
             System.out.println("The correct number was - "+number);
