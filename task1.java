@@ -69,6 +69,7 @@ public class codsoft1 {
         System.out.println("6. After all your chances are used, the round ends.");
         System.out.println("7. You can choose the number of rounds you want to play.");
         System.out.println("8. Your score for each round will be displayed after it's completed.");
+        System.out.println("9. If it's displayed excessively high or low, it's just a 15-unit variance.");
         System.out.println("\nBEST OF LUCK!");
 
 
