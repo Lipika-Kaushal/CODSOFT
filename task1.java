@@ -1,5 +1,6 @@
 import java.util.*;
-public class codsoft1 {
+
+public class codsoft1{
     Random rand = new Random();
     int n =rand.nextInt(100)+1;
 
@@ -18,8 +19,8 @@ public class codsoft1 {
 
     }
     public static void game(int chances){
-        Random rand = new Random();
-        int n =rand.nextInt(100)+1;
+        Random randInt = new Random();
+        int n =randInt.nextInt(100)+1;
         int number = n;
         int score = 0;
         Scanner sc = new Scanner(System.in);
@@ -54,7 +55,6 @@ public class codsoft1 {
         }
 
     }
-
     public static void main(String[] args) {
 
 
