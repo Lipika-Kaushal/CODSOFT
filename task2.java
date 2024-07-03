@@ -49,7 +49,7 @@ public class StudentGradeCalculator {
             grade = "Fail";
         }
 
-        System.out.println("\nGRADE - "+grade);
+        System.out.println("\nGRADE - "+grade+"\nOur grading policy - [ (S- >=90 or <=100)  (A- >=80 or <90)  (B- >=70 or <80)  (C- >=60 or <70)  (D- >=50 or <60)  (E- >=40 or <50)  (F- <40[FAIL])]");
     }
 
     public static void main(String args[]){
