@@ -1,5 +1,5 @@
 //ATMmachine class
-  import java.util.*;
+import java.util.*;
 
 class ATMmachine{
     private static BankAccount Account = new BankAccount(2500);
@@ -48,12 +48,12 @@ class ATMmachine{
         System.out.println("Your current balance is ₹"+Account.totalbalance());
     }
     public static void main(String [] args){
+
         machine();
     }
 }
 
 //BankAccount class
-
 public class BankAccount{
     private double amt;
     public BankAccount(double initialBalance) {
